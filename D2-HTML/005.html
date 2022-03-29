@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>content</title>
+</head>
+
+<body>
+  <!-- heading content  -->
+  <!-- reset css가 되더라도 제목은 h를 사용하기  -->
+  <h1>hello world</h1>
+  <h2>hello world</h2>
+  <h3>hello world</h3>
+  <h4>hello world</h4>
+  <h5>hello world</h5>
+  <h6>hello world</h6>
+
+  <!-- Grouing contents  -->
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus in eos aliquam iusto fugiat, voluptas eligendi
+    tempore rerum autem suscipit mollitia commodi id omnis, veniam esse nulla libero laborum assumenda?
+    Maiores possimus modi, quae laudantium hic provident expedita omnis temporibus, odit excepturi ipsa tempore eius
+    facere distinctio beatae accusamus, dignissimos rem iusto ipsum esse eligendi dolor. Nesciunt numquam perspiciatis
+    adipisci?</p>
+
+  <!-- 이걸 div로 코딩하면 안됨!  -->
+  <!-- unordered list  -->
+  <ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ul>
+
+  <!-- ordered list  -->
+  <p> ol type : a, A, I, i</p>
+  <ol type="I">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ol>
+  <ol type="A">
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+  </ol>
+
+  <!-- definition list -->
+  <!-- definition term -->
+  <!-- definition description -->
+  <p>dl/dt 스크린리더 쓰는 사람들에게 접근성 높여줌
+    <br>(나중에 css로 dt만 안보이게끔 해주는 작업 가능)
+  </p>
+  <dl>
+    <dt>HTML</dt>
+    <dd>마크업 언어 입니다.</dd>
+  </dl>
+
+  <!-- div 보다 적합한 태그를 최대한 사용 후 대응할 태그가 없을 시 사용  -->
+  <div>
+    <h2>&lt;div&gt; : 레이아웃을 묶을 때 사용</h2>
+  </div>
+  <div>
+    <h3>Hello world</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. &nbsp; Repudiandae facilis blanditiis non? Maiores enim
+      quam quasi ipsum molestias necessitatibus, amet nemo repellendus et aliquam, nesciunt nihil quidem ipsa animi
+      assumenda?</p>
+  </div>
+  <p>잠깐!! 위 div를 section으로 대체 가능하기 때문에 section으로 묶어주는것을 추천 -> 웹 접근성 고려</p>
+  <section>
+    <h3>Hello world</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae facilis blanditiis non? Maiores enim quam
+      quasi ipsum molestias necessitatibus, amet nemo repellendus et aliquam, nesciunt nihil quidem ipsa animi
+      assumenda?</p>
+  </section>
+
+  <figure>
+    <h2>&lt;Figure&gt;</h2>
+    <img src="./a.jpg" alt="엄마코끼리와 아기 코끼리" width="auto" height="100px">
+    <figcaption>
+      관심 받고 싶어하는 아기
+    </figcaption>
+  </figure>
+
+  <h2>&lt;pre&gt;</h2>
+  <p>: Html에 작성한 그대로 화면에 표현 , 주로 컴퓨터 코드 표현</p>
+  <pre>
+    funrtion 제곱(x){
+          return x**2;
+      }
+  </pre>
+
+  <h2>&lt;blockquote&gt; : 인용 블록 <br> &lt;q&gt; : 인용구</h2>
+  <blockquote>
+    <p>제발 그만해 이러다 다 죽어~</p>
+    <cite>-오징어게임-</cite>
+  </blockquote>
+
+  <q>제발 그만해 이러다 다 죽어~</q>
+  <cite>-오징어게임-</cite>
+
+
+  <h2>&lt;main&gt;</h2>
+  <pre>
+    &lt;main&gt;
+    &lt;section&gt;&lt;/section&gt;
+    &lt;section&gt;&lt;/section&gt;
+    &lt;/main&gt;
+  </pre>
+  <main>
+    <section></section>
+    <section></section>
+  </main>
+
+  <h2>&lt;hr&gt; : 가로줄 장면전환, 문단 안 주제 변경될 때 구별위해 사용 (p 내 사용금지)</h2>
+  <h3>hello</h3>
+  <hr>
+  <h3>Bye</h3>
+
+</body>
+
+</html>
