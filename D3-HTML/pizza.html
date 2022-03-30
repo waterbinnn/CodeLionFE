@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피자를 만들자</title>
+</head>
+<body>
+    <h1>Let's Make Pizza</h1>
+      <article>
+        <h2>바베큐 토르티야 피자 </h2>
+        <!-- <img
+        width="450px"
+        sizes="(min-width: 960px) 250px,
+			 (min-width: 620px) 150px,
+			 300px"
+        src="/img/pizza.jpg"
+        alt="피자"> -->
+
+        <img
+        srcset="/img/pizza-300.png 700w,
+                /img/pizza-300.png 600w,
+                /img/pizza-300.png 300w"
+        sizes="(min-width: 960px) 450px,
+               (min-width: 400px) 250px,
+               150px"
+        src="/img/pizza-300.png"
+        alt="달리는 피자 캐릭터">
+
+        <img
+        srcset="/img/pizza-450.jpg 700w,
+                /img/pizza-450.jpg 600w,
+                /img/pizza-450.jpg 300w"
+        sizes="(min-width: 960px) 450px,
+               (min-width: 400px) 250px,
+               150px"
+        src="/img/pizza-450.jpg"
+        alt="바베큐 토르티야 피자">
+
+        <picture>
+          <source srcset="/img/pizza-640.jpg" media="(min-width:960px)">
+          <source srcset="/img/pizza-450.jpg" media="(min-width:640px)">
+          <img width="80px" src="/img/pizza-300.png" alt="달리는 피자" sizes="(min-width:400px) 200px">
+        </picture>
+
+      <h3>재료</h3>
+      <p style="word-break: keep-all;"> 
+        토르티야 2장, 돼지고기 안심 80g, 양송이버섯 3개, 
+        빨강 파프리카·노랑 파프리카 ¼개씩, 브로콜리 ⅛송이, 바비큐소스 2큰술, 
+        모차렐라치즈 2½컵, 토마토소스 2½큰술, 간장·다진 마늘 1작은술씩, 
+        포도씨유·소금·후춧가루·청주 약간씩
+      </p>
+
+      <h3>피자 만드는 방법</h3>
+      <ol style="word-break: keep-all;">
+        <li>
+          돼지고기는 한입 크기로 썰어 소금, 후춧가루, 청주로 밑간한다.
+        </li>
+
+        <li>
+          양송이버섯은 슬라이스하고, 파프리카는 네모나게 썰고,<br>
+           브로콜리는 작게 썰어 끓는 물에 데친 뒤 찬물에 헹구어 물기를 뺀다.
+        </li>
+
+        <li> 
+          달군 팬에 포도씨유를 두르고 다진 마늘을 볶아 향을 낸 다음<br>
+           돼지고기를 볶아 노릇하게 익으면 바비큐소스를 넣는다.
+          </li>
+
+        <li>
+          토르티야 한 장에 모차렐라치즈를 듬뿍 올리고 다른 토르티야로 덮는다.
+        </li>
+
+        <li>토마토소스를 펴 바르고 돼지고기, 채소, 모차렐라치즈를 얹어<br>
+           220℃로 예열한 오븐에서 치즈가 녹을 때까지 5~6분간 굽는다.
+        </li>
+      </ol>
+      <cite>출처: <a href="https://www.smlounge.co.kr/best/article/25487">https://www.smlounge.co.kr/best/article/25487</a></cite>
+      </article>
+    
+</body>
+</html>
