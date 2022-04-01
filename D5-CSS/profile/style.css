@@ -1,0 +1,139 @@
+body,p,ul {
+  margin: 0;
+  padding: 0;
+  /* initial 로 해줄 수 있지만 안되는 브라우저있어서 0으로 해줌 */
+  /* unset 이라는 저절로 설정해주는 속성도 있는데 IE지원이 안돼서 아직 대중적을 쓰지 않음 */
+}
+
+h1,h2{
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style-type:none;
+}
+
+a {
+  text-decoration: none;
+  /* text-decoration: inherit; */
+  /* 부모에게 이걸 줄 케이스가 생긴다면 inherit, 아니라면 초기값인 inisial로 설정 가능. 하지만 통상적으로는 none 많이 씀 */
+  color: inherit;
+  /* initial 하면 나중에 footer(부모)에서 컬러 바꿔줄때 먹지않음 */
+}
+
+body {
+  background-image: url(images/background02.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.wrapper {
+  background-color: #ddd;
+  width: 800px;
+  margin: 0 auto; 
+}
+
+.header {
+  background-image: url(/D5-CSS/profile/images/cover04.png);
+  background-size: cover;
+  text-align: center;
+  height: auto;
+  color: white;
+  padding: 50px 0;
+}
+
+.header h1 {
+  font-size: 100px;
+}
+
+.header img.profile {
+  width: 250px;
+  border-radius: 50%;
+  border: 4px solid rgb(198, 255, 237);
+}
+
+.header p {
+  /* p는 블록요소라 전체줄을 차지함 그래서 width 설정 */
+  border-top: 4px solid;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.contents {
+  /* overflow: hidden; */
+  padding: 30px;
+}
+
+.section {
+  background-image: url(images/icon-information.png);
+  background-repeat: no-repeat;
+  background-position: right 30px center;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.section.skills {
+  background-image: url(images/icon-skills.png);
+}
+
+.section:last-child {
+  margin-bottom: 0;
+} 
+
+.section h2 {
+  color: rgb(9, 87, 255);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.list li {
+  border-left: 5px solid #ddd;
+  padding: 2px 10px;
+}
+
+.list li:hover {
+  background-color: rgba(255, 68, 0, 0.5);
+  color: rgb(255, 251, 251);
+  cursor: ;
+}
+
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  border-radius: 30px;
+  border: 2px solid #ddd;
+  color: #fff;
+  /* 이미지 스프라이트 기법 => 웹성능 위해  */
+  background-image: url(images/icons.png);
+  text-indent: -9999px; /*IR 기법*/
+  background-size: 144px 96px;
+}
+
+.icon.github {
+  background-position: left top;
+}
+
+.icon.facebook {
+  background-position: center top;
+}
+.icon.email {
+  background-position: right top;
+}
+
+.icon:hover {
+  background-position-y: bottom;
+  /* background-position-y로 안하면 일일이 다 해줘야함 ,, 근데 너무 쓸데없고 나머지는 다 그대로 적용하되 y 값만 바꿔야 한다면 이걸 써줌!  */
+}
+

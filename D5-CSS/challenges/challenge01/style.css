@@ -1,0 +1,83 @@
+/* Reset css */
+body,ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/* design */
+
+body{
+  background-color: rgb(62, 62, 62);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+}
+
+.bucketlist {
+  background-color: rgb(196, 229, 255);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: rgb(253, 255, 180);
+  padding: 20px 0;
+  box-shadow: 10px 10px 10px 0 rgba(98, 98, 98, 0.1);
+}
+
+.header h1 {
+  width: auto;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(156, 179, 255);
+  border-left: 3px solid rgb(156, 179, 255);
+}
+
+.list {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px;
+}
+
+.list .item {
+  width: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+  border: 2px solid rgb(255, 230, 230);
+  background-color: #fff;
+  color: rgb(104, 104, 104);
+  /* margin-bottom: 15px; */
+}
+
+.list .item:last-child {
+  /* margin-bottom: 0; */
+}
+
+.list .item:hover {
+  border: 2px solid rgb(255, 248, 151);
+  background-color: rgb(255, 221, 221);
+  color: #fff;
+}
+
+
