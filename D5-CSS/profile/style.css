@@ -32,9 +32,9 @@ body {
 
 
 .wrapper {
-  background-color: #ddd;
+  background-color: rgb(195, 216, 255);
   width: 800px;
-  margin: 0 auto; 
+  margin: 100px auto; 
 }
 
 .header {
@@ -97,9 +97,9 @@ body {
 }
 
 .list li:hover {
-  background-color: rgba(255, 68, 0, 0.5);
+  background-color: rgba(32, 32, 32, 0.5);
+  width: fit-content;
   color: rgb(255, 251, 251);
-  cursor: ;
 }
 
 .footer {
