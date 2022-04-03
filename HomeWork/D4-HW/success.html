@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입 완료</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>@waterbin.log</h1>
+  </header>
+
+  <div class="login-wrapper">
+    <header class="login-header">
+      <h1>✨ 회원가입 완료 ✨</h1>
+    </header>
+    <h2 class="login-des">📌 가입한 아이디로 로그인 해주세요</h2>
+    <form action="success.html" method="post">
+      <section class="login-section">
+      <ul class="login-items">
+        <li>
+          <label for="login" class="login id">아이디</label>
+          <input type="text" name="아이디" id="id" placeholder="아이디리링" minlength="5" maxlength="11">
+        </li>
+        <li>
+          <label for="pw" class="login pw">비밀번호</label>
+          <input type="password" name="비밀번호" id="pw" placeholder="비밀번호 486" minlength="8" maxlength="15">
+      </ul>  
+      <button type="submit" class="sign-in">
+       <p>로그인</p> 
+      </button>
+      </section>
+    </form>
+  </div>
+</body>
+</html>

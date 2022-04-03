@@ -24,6 +24,11 @@ button,input{
   background-color: initial;
 }
 
+a {
+  text-decoration: none;
+  color: #525252;
+}
+
 
 /* styling  */
 
@@ -101,7 +106,7 @@ text-align: center;
 #birth {
   font-size: 10px;
 }
-/* 달력눌렀을때 작게 보이는거 해결  */
+/* 달력눌렀을때 작게 보이는 이유는?  */
 
 .info-list input[type="radio"] {
   width: 15px;
@@ -230,11 +235,13 @@ text-align: center;
 }
 
 .sign-up {
-  text-align: center;
+  /* text-align: center; */
   padding: 10px 0 20px 0;
 }
 
-.sign-up button {
+.sign-up a {
+  display: flex;
+  margin: 0 auto;
   width: 95px;
   height: 26px;
   background-color: #f4d0d0;
@@ -245,11 +252,106 @@ text-align: center;
   cursor: pointer;
 }
 
-.sign-up button:hover,
-.sign-up button:focus {
-  background-color: rgb(187, 255, 255);
-  color: #f4d0d0;
-
+.sign-up a p{
+  padding: 8px 29px;
 }
 
+.sign-up a:hover,
+.sign-up a:focus {
+  background-color: rgb(187, 255, 255);
+  color: #f4d0d0;
+}
 
+/* sucess.html 스타일링*/
+
+.login-wrapper {
+  width: 300px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px 30px;
+}
+
+.login-header {
+  width: auto;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgb(253, 255, 203);
+  padding: 10px;
+  color: rgb(41, 41, 41);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.login-des {
+  padding: 20px 0;
+  color: #949494;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section .login{
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-section li:first-child {
+  margin-bottom: 20px;
+}
+
+.login-section li input {
+  width: 222px;
+  height: 26px;
+  background: #F8F8F8;
+  border: 0.5px solid #F0F0F0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 10px;
+  font-size: 13px;
+  color: #444444;
+  /* 입력값만 패딩값 주고 싶을땐 ? */
+}
+
+.login-section li input::placeholder {
+  color: #f4d0d0;
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+.login-section li input:hover, 
+.login-section li input:focus {
+  border: 1px solid rgb(187, 255, 255);
+  outline: none;
+}
+
+.sign-in {
+  display: flex;
+  margin: 0 auto;
+  width: 95px;
+  height: 26px;
+  background-color: rgb(253, 255, 203);
+  color: #f4d0d0;
+ 
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sign-in p{
+  padding: 8px 34px;
+}
+
+.sign-in:hover,
+.sign-in:focus {
+  background-color: rgb(187, 255, 255);
+  color: rgb(253, 255, 203);
+}
