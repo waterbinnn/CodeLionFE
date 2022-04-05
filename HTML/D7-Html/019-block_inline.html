@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록레벨 요소 vs 인라인 요소</title>
+</head>
+<style>
+  p{
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+  }
+  span{
+    font-size: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+  }
+  .one {
+    font-size: 0;
+  }
+  .two {
+    display: inline;
+    font-family: 'Rubik Wet Paint', cursive;
+    /* 폰트를 바꾸면 폰트의 여백이 생기는 문제점이 발생  */
+  }
+  .three {
+     line-height: 16px; 
+  }
+</style>
+<body>
+    <p>hello world</p>
+    <div class="one">
+      <span>hello world</span>
+      <span>hello world</span>
+    </div>
+    <div class="three">
+      <span class="two">h</span>ello
+      <span class="two">h</span>ello
+    </div>
+</body>
+</html>
