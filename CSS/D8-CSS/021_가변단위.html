@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변크기단위</title>
+    <style>
+      body{
+        font-size: 10px;
+      }
+      p{
+        font-size: 2em;
+      }
+      div {
+        /* 내 부모가 가진 font-size 의 두배가 됨  */
+        font-size: 2em;
+      }
+      .one {
+        /* rem : root em 원래 사이즈에서 2배수가 됨  */
+        font-size: 2rem;
+      }
+      .two{
+        width: 50%;
+        /* 내 부모(여기서는 body)의 width의 50%  */
+        height: 200px;
+        background-color: rgb(200, 255, 99);
+      }
+      .three{
+        width: 50%;
+        height: 50%;
+        background-color: rgb(255, 212, 212);
+      }
+    </style>
+</head> 
+<body>
+  <h1>HEY</h1>
+  <p>HEY</p>
+  <div>
+    <div class="one">font-size</div>
+  </div>
+  <div class="two">
+    <div class="three"></div>
+  </div>
+</body>
+</html>

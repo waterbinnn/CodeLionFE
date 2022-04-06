@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width And Height</title>
+    <style>
+      h1{
+        /* width를 200px로 딱 맞춰줌 
+        box-sizing: border-box; */
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        /* border: 10px solid black; */
+        /* border-bottom: 4px double black; */
+        border-bottom-width: 4px;
+        border-bottom-color: black;
+        border-bottom-style: double;
+      }
+      p{
+        padding: 10px;
+        border: 20px ridge #7ffff6;
+      }
+      h2{
+        width: 200px;
+        height: 50px;
+        padding: 2px;
+        border: solid 10px;
+        border-color: red green blue yellow;
+      }
+      h3{
+        width: 200px;
+        height: 50px;
+        padding: 2px;
+        border: thin dotted purple;
+      }
+      .one{
+        width: 80px;
+        height: 80px;
+        border-radius: 10%;
+        border: 3px solid #2289d2;
+      }
+      .two {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border: 5px solid black;
+        background-color: blanchedalmond;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 20px;
+      }
+      .three {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        border: 5px solid black;
+        background-color: blanchedalmond;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 50px;
+      }
+    </style>
+</head>
+<body>
+    <!-- 기본 사이즈 32px -->
+    <h1>헤이모두들안녕</h1>
+    <h2>헤이헤이헤딩</h2>
+    <h3>헤이헤이헤딩추가</h3>
+    <!-- 기본 사이즈 16px  -->
+    <p>hello world</p>
+    <div class="one"></div>
+    <br>
+    <br>
+    <br>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
