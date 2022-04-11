@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+.a{
+  /* p태그 크기 제한  */
+  width: 500px;
+  /* 요소 넘어가는 컨텐츠 숨김  */
+  overflow: hidden;
+  /* nowrap: 줄바꿈하지않음 - 그래야 ... 이 들어갈만큼 길어지니깐! */
+  white-space: nowrap; 
+  /* ... 표시  */
+  text-overflow: ellipsis;
+}
+
+.b {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*  블록 컨텐츠의 라인 수를 제한*/
+  -webkit-box-orient: vertical;
+}
+
+</style>
+</head>
+<body>
+    <p class="a">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod molestiae ipsam labore. Explicabo quod dolorum reiciendis excepturi iure doloribus, distinctio saepe, perferendis ea quos eius deserunt eveniet, iusto id itaque!</p>
+
+    <div>
+      <p class="b">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero distinctio molestias assumenda recusandae similique. Temporibus, hic nostrum harum ipsa modi excepturi cupiditate fugit soluta. Sed aliquam possimus quasi reprehenderit.
+      </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+  li + li {
+    li 뒤에 li 
+    /* 근데 명확하게 나와있지 않아서 처음의 li를 제외한 모든 li 가 red  */
+    color: red;
+  }
+  ul p {
+    /* ul 안에 있는 p  */
+    font-size: 22px;
+  }
+
+  li > p {
+    /* li 딱 그 직계자식 p 만 blue가 된다 */
+    background-color: blue;
+  }
+
+  li.one {
+    background-color: yellowgreen;
+  }
+</style>
+</head>
+<body>
+    <ul>
+      <li >
+        <p>Hello World</p>
+      </li>
+      <li>
+        <div>
+          <div>
+            <div>
+              <p>Hello World</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="one">Hello World</li>
+      <li class="one">Hello World</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <style>
+     .container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      margin-left: 100px;
+      border: 5px solid gray;
+     }
+     
+     .one {
+       width: 100px;
+       height: 100px;
+       border: 1px solid gray;
+     }
+
+     .one:nth-child(1) {
+       position: static;
+       background-color: rgb(255, 211, 211);
+     }
+     
+     .one:nth-child(2) {
+       position: absolute;
+       top: 10px;
+       left: 10px;
+       background-color: rgb(228, 255, 141);
+      }
+      .one:nth-child(3) {
+       position: static;
+       background-color: rgb(174, 235, 255);
+     }
+
+     </style>
+</head>
+<body>
+  <div class="container">
+    <div class="one">box1</div>
+    <div class="one">box2</div>
+    <div class="one">box3</div>
+  </div>
+</body>
+</html>
