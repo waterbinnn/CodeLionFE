@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 아래와 같이 공백이 있게 쓰는건 의도와 다른 문제가 생긴다
+    이렇게 사용을 지양  */
+    p[class*="paul "]{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+    <p class="paul">hello world</p>
+    <p class="paul test">hello world</p>
+    <p class="paultest">hello world</p>
+    <p class="paullab">hello world</p>
+    <p class="koreapaullab">hello world</p>
+    <p class="world">hello world</p>
+</body>
+</html>
+
