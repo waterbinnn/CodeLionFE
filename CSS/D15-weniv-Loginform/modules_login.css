@@ -89,20 +89,28 @@
     border: 1px solid #F2C94C;
 }
 
+.link-sns-login::before {
+    display: block;
+    background-image: url("images_login/css_sprites_2.png");
+    background-repeat: no-repeat;
+    background-size: 32px 130px;
+    width: 28px;
+    height: 28px;
+
+}
+
 .icon-google::before {
-    background: url("images_login/icon_google.png") no-repeat;
-}
-
-.icon-naver::before {
-    background: url("images_login/icon_naver.png") no-repeat;
-}
-
-.icon-kakao::before {
-    background: url("images_login/icon_kakao.png") no-repeat;
+    background-position: 0px -36px;
 }
 
 .icon-facebook::before {
-    height: 24px;
-    background: url("images_login/icon_facebook.png") center no-repeat;
+    background-position: 5px -101px;
+}
 
+.icon-naver::before {
+    background-position: 0px -68px;
+}
+
+.icon-kakao::before {
+    background-position: 0px -3px;
 }
