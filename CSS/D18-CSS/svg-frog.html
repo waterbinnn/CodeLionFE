@@ -8,14 +8,12 @@
     <style>
      .eye-right {
         fill: rgb(255, 33, 203);
-        animation: wink 1s infinite alternate;
+        animation: wink .5s infinite alternate;
+        transform-origin: 353.5px 129px;
       }
       @keyframes wink {
-        from {
-          width: 0%;
-        }
         to {
-          width: 100%;
+          transform: scaleY(0.1);
         }
       }
     </style>
