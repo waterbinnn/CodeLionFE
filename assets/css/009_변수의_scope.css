@@ -1,0 +1,11 @@
+.one {
+  color: red;
+}
+
+.one .two {
+  color: red;
+}
+
+.three {
+  color: red;
+}

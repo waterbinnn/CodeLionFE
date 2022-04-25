@@ -1,0 +1,11 @@
+%base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red
+}
+
+.box {
+  // %를 사용하면 css 로 컴파일되지않음 
+  @extend %base-box;
+  border: 5px solid black;
+}

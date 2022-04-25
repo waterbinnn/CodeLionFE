@@ -1,0 +1,12 @@
+.base-box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box {
+  // .base-box를 확장해서 쓰겠다는 의미 
+  @extend .base-box;
+  border: 5px solid black;
+}
+

@@ -1,0 +1,19 @@
+// green 으로 $value 를 설정했는데 
+// !global 을 썼기 때문에 red 가 나옴 
+// 쓰지 말자!!!!!
+
+$value: green;
+
+.one {
+  $value:red !global;
+  color: $value;
+  .two {
+    color: red;
+  }
+
+}
+
+.three {
+  color: $value;
+}
+

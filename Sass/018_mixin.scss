@@ -1,0 +1,24 @@
+@mixin one {
+  width: 100px;
+  height: 100px;
+  color: white;
+  @content;
+  // @content 를 쓰나 안쓰나 같은데 쓰는 이유는?아키텍처를 변경해주고싶을때 명시하고싶을때 씀
+}
+
+a {
+  @include one {
+    background-color: black;
+  }
+}
+
+@mixin two {
+  width: 100px;
+  height: 100px;
+  color: white;
+}
+
+button {
+  @include two;
+  background-color: black;
+}

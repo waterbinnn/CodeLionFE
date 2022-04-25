@@ -1,0 +1,20 @@
+// 한줄주석압니다. css로 변환될땐 보이지 않아요 
+/*두줄주석입니다.*/
+
+ul {
+  li {
+    color: red;
+    font-size: 10px;
+  }
+}
+
+.one {
+  color: red;
+  .two {
+    color: green;
+  }
+  .three {
+   color: blue; 
+  }
+}
+

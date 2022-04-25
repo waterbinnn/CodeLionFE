@@ -1,0 +1,22 @@
+// .content-1 {
+//     font-size: 10px;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+// }
+// ...
+// .content-10 {
+//     font-size: 100px;
+//     width: 100px;
+//     height: 100px;
+//     background-color: red;
+// }
+
+@for $susu from 1 through 10 {
+  .content-#{$susu} {
+      font-size: #{$susu * 10}px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+  }
+}
