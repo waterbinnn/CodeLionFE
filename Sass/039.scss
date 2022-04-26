@@ -1,0 +1,9 @@
+@for $subin from 1 through 100 {
+  .photo-box-#{subin} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    font-size: $subin + px;
+    // font-size: ($subin)px; // 1칸 건너 뜀
+  }
+}

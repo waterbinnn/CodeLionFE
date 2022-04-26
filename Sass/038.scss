@@ -1,0 +1,7 @@
+@for $susu from 1 through 100 {
+  .photo-box-#{$susu} {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+}

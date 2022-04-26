@@ -1,0 +1,10 @@
+$susu: 5;
+
+@while $susu > 1 {
+  $susu: $susu - 1;
+  .content-#{$susu}{
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+  }
+}
