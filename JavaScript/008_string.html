@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body>
+  <script>
+    // 문자열 (String) 
+
+    let txt = 'ABCDEFGHIJ';
+    let txt_two = 'mom said \'hello world\'';
+    let txt_three = "mom said 'hello world'";
+    let number = '100';
+
+    document.write(number + number, '<br>'); //100100
+    document.write(Number(number) + Number(number), '<br>'); //200
+    document.write(parseInt(number) + parseInt(number), '<br>'); //200
+    document.write(+number + +number, '<br>'); //200
+    document.write(`txt: ${txt}`, '<br>'); //txt: ABCDEFGHIJ
+    // 문제 : 100 + 100 = 200 이라고 출력해주세요 
+    document.write(`100+100= ${+number + +number}`, '<br>'); //100+100= 200
+    document.write(`100+100= ${number * 2}`, '<br>'); //100+100= 200
+
+    document.write(`txt.length: ${txt.length}`, '<br>'); //txt.length: 10
+    document.write(`txt[1]: ${txt[1]}`, '<br>'); //txt[1]: B
+    // indexOf 는 정규표현식을 허용하지 않는다. 
+    document.write(txt.indexOf("F"), '<br>');//5
+    document.write(`txt.indexOf("F") : ${txt.indexOf("F")}`, '<br>');//txt.indexOf("F") : 5
+    document.write(`txt.search("F") : ${txt.search("F")}`, '<br>');//txt.search("F") : 5
+    document.write(`txt.indexOf("Z") : ${txt.indexOf("Z")}`, '<br>'); //txt.indexOf("Z") : -1
+    document.write(`txt.search("Z") : ${txt.search("Z")}`, '<br>'); //txt.search("Z") : -1
+
+    let regExp = /BCD/;
+    document.write(`txt.search(regExp) : ${txt.search(regExp)}`);
+
+    document.write(`txt.lastIndexOf : ${txt.lastIndexOf("Z")} <br>`); //뒤에서부터 찾아줌 //txt.search(regExp) : 1txt.lastIndexOf : -1
+
+    document.write(`txt.slice(0, 3) : ${txt.slice(0, 3)} <br>`); //txt.slice(0, 3) : ABC
+    document.write(`txt.substring(0, 3) : ${txt.substring(0, 3)} <br>`); //txt.substring(0, 3) : ABC
+    document.write(`txt.substr(2, 5) : ${txt.substr(2, 5)} <br>`);//txt.substr(2, 5) : CDEFG
+    document.write(`txt.replace('ABC', 'susu') : ${txt.replace(/ABC/g, 'susu')} <br>`); //txt.replace('ABC', 'susu') : susuDEFGHIJ
+
+
+    document.write(`<br><br><br>`);
+
+
+    document.write(`txt.toUpperCase() : ${txt.toUpperCase()} <br>`);//txt.toUpperCase() : ABCDEFGHIJ
+    document.write(`txt.toLowerCase() : ${txt.toLowerCase()} <br>`); //txt.toLowerCase() : abcdefghij
+
+    document.write(`<br><br><br>`);
+    // 문자열의 내장 함수
+
+    document.write(txt.includes('Z'), '<br>'); //false
+    document.write(txt.startsWith('CD'), '<br>'); //false
+    document.write(txt.endsWith('AB'), '<br>'); //false
+    document.write(txt.indexOf('AB', 3), '<br>');//11
+  </script>
+</body>
+
+</html>
