@@ -16,7 +16,7 @@ cafe.unshift(first);
 console.log(cafe); //['coffee', 'cake', 'tea', 'cookie']
 
 let last = cafe.pop();
- 
+
 console.log(last); //cookie
 console.log(cafe); //[ 'bread', 'coffee', 'cake', 'tea' ]
 
@@ -228,7 +228,7 @@ arr.forEach((i) => console.log(i));
 // expected output: 9
 // expected output: 10
 
-//reduce(): 각 요소에 누적해주며 실앻라고 싶을때
+//reduce(): 각 요소에 누적해주며 실행하고 싶을때
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 arr.reduce((누적값, 현재값) => 누적값 + 현재값); //55
@@ -244,4 +244,3 @@ Array.from([1, 2, 3], (x) => x ** 2);
 Array.from([{ value: 100 }, { value: 200 }, { value: 300 }], (x) => x.value);
 //expected output: [100, 200, 300]
 
-I
