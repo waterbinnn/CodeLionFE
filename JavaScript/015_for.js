@@ -102,6 +102,7 @@ for (let i = 0; i < data.length; i++) {
     가장큰나이 = data[i]["나이"];
   }
 }
+// Math.max(...data.map((i)=>i.나이));
 console.log(가장큰나이); //55
 
 let 가장작은나이 = 1000000;
