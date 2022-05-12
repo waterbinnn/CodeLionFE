@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      background-color: rgb(41, 41, 41);
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      margin: 0 auto 100px;
+      width: 450px;
+      height: 450px;
+      background-color: rgb(128, 70, 196);
+      border-radius: 50%;
+      border: 10px solid rgb(218, 185, 255);
+    }
+
+    button {
+      border: none;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      color: rgb(218, 185, 255);
+      background-color: rgb(12, 12, 12);
+      cursor: pointer;
+    }
+
+    button:hover {
+      box-shadow: 0px 2px 40px rgba(224, 224, 224, 0.5);
+    }
+
+    .btn-wrap {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button.red:hover {
+      color: rgb(255, 98, 116);
+    }
+
+    button.yellow:hover {
+      color: rgb(248, 255, 155);
+    }
+
+    button.green:hover {
+      color: rgb(105, 172, 116);
+    }
+
+    .box.red {
+      background-color: rgb(255, 98, 116);
+    }
+
+    .box.yellow {
+      background-color: rgb(248, 255, 155);
+    }
+
+    .box.green {
+      background-color: rgb(105, 172, 116);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box"></div>
+    <div class="btn-wrap">
+      <button class="red">RED</button>
+      <button class="yellow">YELLOW</button>
+      <button class="green">GREEN</button>
+    </div>
+  </div>
+
+  <script>
+    const box = document.querySelector('.box');
+    const red = document.querySelector('.red');
+    const yellow = document.querySelector('.yellow');
+    const green = document.querySelector('.green');
+
+    // red.addEventListener('click', () => {
+    //   box.classList.remove("red", 'yellow', 'green');
+    //   box.classList.add('red')
+    // });
+    // yellow.addEventListener('click', () => {
+    //   box.classList.remove("red", 'green');
+    //   box.classList.add('yellow')
+    // });
+    // green.addEventListener('click', () => {
+    //   box.classList.remove("red", 'yellow');
+    //   box.classList.add('green')
+    // });
+
+    const btnArr = [red, yellow, green]
+
+    btnArr.forEach((element) => {
+      element.addEventListener('click', () => {
+        box.classList.remove('red', 'green', 'yellow');
+        if (element.className == 'red') {
+          box.classList.add('red')
+        } else if (element.className === 'yellow') {
+          box.classList.add('yellow')
+        } else {
+          box.classList.add('green')
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>

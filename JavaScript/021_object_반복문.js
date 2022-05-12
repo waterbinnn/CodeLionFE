@@ -113,12 +113,11 @@ for (let [[a, b], j] of [
   [[1, 2], 4],
 ]) {
   console.log(a, b, j);
- }
- /**
+}
+/**
 1 2 2
 1 2 4
-  */ 
-
+  */
 
 let [a, b] = [10, 20];
 console.log(a); //10
@@ -176,3 +175,4 @@ console.log(date.getDay()); //2
 console.log(date.getSeconds()); //35
 console.log(date.getFullYear()); //2022
 console.log(date.getYear()); //122
+

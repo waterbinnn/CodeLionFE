@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DOM</title>
+</head>
+
+<body>
+  점심 식단
+  <article id="container">
+    <ul>
+      <li>탕수육</li>
+      <li class="item-second">유산슬</li>
+      <li>짜장면</li>
+    </ul>
+  </article>
+  저녁 식단
+  <article>
+    <ul>
+      <li>된장국</li>
+      <li class="item-second">김치찌개</li>
+      <li>해장국</li>
+    </ul>
+  </article>
+
+  <button>CLICK!</button>
+
+  <button>MAKE ME BLUE</button>
+
+</body>
+
+<script>
+  console.log(document.getElementsByTagName('li')[0]);
+  console.log(document.getElementsByClassName('item-second')[0]);
+
+  document.querySelector('.item-second'); //하나만 가져옴 
+  document.querySelectorAll('.item-second'); //리스트 , 여러요소를 가져옴
+
+  const myBtn = document.querySelectorAll("button");
+
+  myBtn.addEventListener('click', function () {
+    console.log("hello world");
+  })
+
+  myBtn.addEventListener('click', function () {
+    myBtn.classList.add("blue");
+  })
+
+
+  
+
+</script>
+
+</html>
