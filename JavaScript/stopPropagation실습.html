@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>나의 todo list</h1>
+  <p>1. 오늘 저녁에는 부대찌게를 끓여 먹겠다.<button type="button">삭제</button></p>
+  <p>2. 후식으로 슈팅스타를 먹겠다.<button type="button">삭제</button></p>
+  <p>3. 자기 전에 반드시 내일 아침 메뉴를 생각해두겠다.<button type="button">삭제</button></p>
+
+  <script>
+    const txts = document.querySelectorAll('p');
+    const btns = document.querySelectorAll('button');
+
+    for (let i = 0; i < txts.length; i++) {
+      txts[i].addEventListener('click', (event) => {
+        alert(event.target.textContent.slice(0, -2)); //삭제까지 글자가 포함되어서 slice 로 지워줌 
+      })
+    }
+
+    for (const item of btns) {
+      item.addEventListener('click', (event) => {
+        let result = confirm('삭제하시겠습니까?');
+        event.stopPropagation(); //이벤트 전파 차단! 이걸쓰기 전에는 alert창이 하나 더 떴었는데 이걸 해줌으로서 안나옴
+        if (result) {
+          item.parentElement.remove(); //클릭한건 버튼이니깐 버튼의 부모요소를 찾아가서 제거
+        }
+      })
+    }
+
+
+    // Array.prototype.forEach.call(txts, (item) => {
+    //   item.addEventListener('click', (event) => {
+    //     alert(event.target.textContent.slice(0, -2));
+    //     // array로 부터 txts가 foreach를 빌려온다
+    //     // call 의 두번째 매개변수는 forEach안에서 사용할 매개변수를 집어넣는다.
+    //   })
+    // });
+
+    // 위 코드를 foreach 문으로 해줬을 경우 - IE지원이 안됨;
+    //  texts.foreach((item) => {
+    // item.addEventListener('click', (event) => {
+    //   alert(event.target.textContent.slice(0, -2));
+    //   })
+    // });
+
+
+
+
+
+
+
+
+
+    // p.addEventListener('click', (event) => {
+    //   alert('clicked')
+    //   event.preventDefault();
+    // })
+
+    // function deletealert(){
+    //   const message = "삭제?"
+    //   result = window.confirm(message);
+    //   alert(result);
+    //   if (result){
+    //     console.log('삭제')
+    //   } else {
+    //     console.log('취소')
+    //   }
+    // }
+
+    // deleteBtn.addEventListener('click', () => {
+    //   if (window.confirm("삭제하시겠습니까?")) {
+    //     window.alert("삭제완료");
+    //   } else {
+    //     window.alert("취소");
+    //   }
+    // });
+
+
+
+  </script>
+</body>
+
+</html>

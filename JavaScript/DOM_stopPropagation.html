@@ -1,0 +1,20 @@
+<form action="">
+	<button type="submit" class="submit">제출</button>
+</form>
+
+<script>
+	const submit = document.querySelector('.submit');
+	submit.addEventListener('click', (event) => {
+		console.log('clicked');
+		event.preventDefault();
+		event.stopPropagation();
+		// 이벤트 전파를 막는다! 원래는 버블링이 일어나서 부모에 있는 버블링 이벤트 (아래있는 'event still alive!'가 나와야하는데 전파를 막아서 'clicked'만 출력 )
+	});
+
+	document.body.addEventListener('click', () => {
+		console.log('event still alive!');
+	}, true);
+		// true 가 없으면 stopPropagation()로 버블링이벤트 전파가 막아져서 출력 안됨
+
+	//true를 넣었을 때 캡처링이벤트가 되어서 'event still alive!'가 나온다. 위에 전파과정을 막았음에도 캡처링 이벤트로 설정했기때문에 출력이 잘 됨 ! 
+</script>
