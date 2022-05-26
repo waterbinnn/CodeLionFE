@@ -89,3 +89,4 @@ todoManager.addItem("집필 내용 추가하기");
 console.log(todoManager.getItems());
 
 console.log(todoManager.getLeftTodoCount());
+
